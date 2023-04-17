@@ -1,0 +1,35 @@
+[
+    {
+        "_id": {
+            "$oid": "63f7051bcf42dfb589b6bd9e"
+        },
+        "a_u": "u",
+        "adhar_photo": "(maharsh2017@gmail.com).jpg",
+        "fname": "Maharsh",
+        "lname": "Patel",
+        "mail": "maharsh2017@gmail.com",
+        "otp_veri": "1",
+        "pass": "1",
+        "verified": "1",
+        "adhar": [
+            {
+                "@uid": "713801944755",
+                "@name": "Maharsh Ketanbhai Patel",
+                "@gender": "M",
+                "@yob": "2000",
+                "@co": "S/O: Ketanbhai Patel",
+                "@house": "B-1",
+                "@street": "orchid bunglows",
+                "@lm": "near shyam vihar bunglows",
+                "@loc": "thaltej shilaj road",
+                "@vtc": "Thaltej",
+                "@po": "Thaltej",
+                "@dist": "Ahmedabad",
+                "@subdist": "Daskroi",
+                "@state": "Gujarat",
+                "@pc": "380059",
+                "@dob": "24/10/2000"
+            }
+        ]
+    }
+]

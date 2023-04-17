@@ -1,0 +1,12 @@
+[
+    {
+        "_id": {
+            "$oid": "642abc176d0bc12e57b0aa65"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "photo": "317948908039.png",
+        "tran_id": "317948908039",
+        "upi_uri": "upi://pay?pa=9428246636@upi&pn=Patel%20Shankarbhai%20Nathabhai&am=12&cu=INR&tn=purchase%20GGIW%20wallet%20credits&tr=317948908039",
+        "amount": "12"
+    }
+]

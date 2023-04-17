@@ -1,0 +1,24 @@
+[
+    {
+        "_id": {
+            "$oid": "641252196aea310f2672786f"
+        },
+        "owner_name": "Maharsh Patel",
+        "mail": "maharsh@gmail.com",
+        "pass": "1",
+        "owner_number": "7041477686",
+        "GSTIN": "dfsdfdsfsdfdsfd",
+        "prop_name": "Cambay Grand",
+        "address": "B-1 Orchid Bungalows thaltej  shilaj road",
+        "map_link": "https://goo.gl/maps/B1YuCPMUqmsK6dUN6",
+        "lati": "23.05908108",
+        "longi": "72.5228979",
+        "pincode": "380059",
+        "state": "Gujarat",
+        "city": "Ahmedabad",
+        "area": "Thaltej",
+        "details": "this is best",
+        "rating": 0,
+        "verified": 1
+    }
+]

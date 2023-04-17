@@ -1,0 +1,66 @@
+{% extends "user/head_foot.html" %}
+
+{% block body %}
+
+
+
+
+
+
+            <div id="ajax-content">
+                <div class="rp-page-audio" data-audio="https://rascalsthemes.com/demo/angio/audio/2.mp3"></div>
+                <div class="content--fullscreen content--builder content--parallax-layers">
+                    <div class="fx-smooth-move fs">                        
+                
+
+                        <div class="folium-map" id="map_id_div_tag"></div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- #ajax content -->
+
+
+
+
+
+
+	<script>
+        var map_id_div_tag = L.map("map_id_div_tag", {
+            center: [{{zoom_cor['lat']}}, {{zoom_cor['lon']}}],
+            crs: L.CRS.EPSG3857,
+            zoom: 14,
+            zoomControl: true,
+            preferCanvas: false,
+        });
+
+        var add_layer = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png").addTo(map_id_div_tag);
+
+
+        {% for home in homes %}
+        	var c_marker = L.circleMarker([ {{ home['lati'] }} , {{ home['longi'] }} ], {}).addTo(map_id_div_tag);
+        	var add_popup = L.popup({ maxWidth: "100%" });
+        	var popup1 = $(`<div id="popup1" style="width: 100.0%; height: 100.0%;"><a href="/view/homes?id={{home['_id']}}"> {{ home['prop_name'] }} </a></div>`)[0];
+        	c_marker.bindPopup(add_popup.setContent(popup1));
+        {% endfor %}
+
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".leaflet-control-container").empty();
+        
+        setInterval(function () { map_id_div_tag.invalidateSize(); }, 100);
+
+    </script>
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+[
+    {
+        "_id": {
+            "$oid": "642dafd27a329f1c05f6819d"
+        },
+        "u_id": "63f7051bcf42dfb589b6bd9e",
+        "room_id": "641388ebcf0182aec2030267",
+        "s_Date": "2023-04-05",
+        "e_Date": "2023-04-07",
+        "note": "none",
+        "tot_days": "2",
+        "amount": "4000",
+        "curr_date_time": "05/04/2023 22:58:50"
+    },
+    {
+        "_id": {
+            "$oid": "642db23a9f90b4cade07dae1"
+        },
+        "u_id": "63f7051bcf42dfb589b6bd9e",
+        "room_id": "641388ebcf0182aec2030267",
+        "s_Date": "2023-04-08",
+        "e_Date": "2023-04-09",
+        "note": "abc",
+        "tot_days": "1",
+        "amount": "2000",
+        "curr_date_time": "05/04/2023 23:09:06"
+    },
+    {
+        "_id": {
+            "$oid": "642db2519f90b4cade07db41"
+        },
+        "u_id": "63f7051bcf42dfb589b6bd9e",
+        "room_id": "641388ebcf0182aec2030267",
+        "s_Date": "2023-04-10",
+        "e_Date": "2023-04-16",
+        "note": "xyz",
+        "tot_days": "6",
+        "amount": "12000",
+        "curr_date_time": "05/04/2023 23:09:29"
+    },
+    {
+        "_id": {
+            "$oid": "642db2e99f90b4cade07dc8b"
+        },
+        "u_id": "63f7051bcf42dfb589b6bd9e",
+        "room_id": "641388ebcf0182aec2030267",
+        "s_Date": "2023-04-17",
+        "e_Date": "2023-04-18",
+        "note": "towel",
+        "tot_days": "1",
+        "amount": "2000",
+        "curr_date_time": "05/04/2023 23:12:01"
+    },
+    {
+        "_id": {
+            "$oid": "642ea3031be74ede30300800"
+        },
+        "u_id": "63f7051bcf42dfb589b6bd9e",
+        "room_id": "641388ebcf0182aec2030267",
+        "s_Date": "2023-04-19",
+        "e_Date": "2023-04-20",
+        "note": "towel",
+        "tot_days": "1",
+        "amount": "2000",
+        "curr_date_time": "06/04/2023 16:16:27"
+    }
+]

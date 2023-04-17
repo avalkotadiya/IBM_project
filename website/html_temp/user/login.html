@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Login &#8211; Angio</title>
+        <meta name="robots" content="max-image-preview:large" />
+        <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+        <link rel="dns-prefetch" href="http://s.w.org/" />
+        <link rel="alternate" type="application/rss+xml" title="Angio - Creative Music WordPress Theme &raquo; Feed" href="../feed/index.html" />
+        <link rel="alternate" type="application/rss+xml" title="Angio - Creative Music WordPress Theme &raquo; Comments Feed" href="../comments/feed/index.html" />
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+                ext: ".png",
+                svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+                svgExt: ".svg",
+                source: { concatemoji: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2" },
+            };
+            /*! This file is auto-generated */
+            !(function (e, a, t) {
+                var n,
+                    r,
+                    o,
+                    i = a.createElement("canvas"),
+                    p = i.getContext && i.getContext("2d");
+                function s(e, t) {
+                    var a = String.fromCharCode,
+                        e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL());
+                    return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL();
+                }
+                function c(e) {
+                    var t = a.createElement("script");
+                    (t.src = e), (t.defer = t.type = "text/javascript"), a.getElementsByTagName("head")[0].appendChild(t);
+                }
+                for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)
+                    (t.supports[o[r]] = (function (e) {
+                        if (!p || !p.fillText) return !1;
+                        switch (((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)) {
+                            case "flag":
+                                return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039])
+                                    ? !1
+                                    : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) &&
+                                          !s(
+                                              [55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447],
+                                              [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]
+                                          );
+                            case "emoji":
+                                return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999]);
+                        }
+                        return !1;
+                    })(o[r])),
+                        (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+                        "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+                (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag),
+                    (t.DOMReady = !1),
+                    (t.readyCallback = function () {
+                        t.DOMReady = !0;
+                    }),
+                    t.supports.everything ||
+                        ((n = function () {
+                            t.readyCallback();
+                        }),
+                        a.addEventListener
+                            ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1))
+                            : (e.attachEvent("onload", n),
+                              a.attachEvent("onreadystatechange", function () {
+                                  "complete" === a.readyState && t.readyCallback();
+                              })),
+                        (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
+            })(window, document, window._wpemojiSettings);
+        </script>
+        <style type="text/css">
+            img.wp-smiley,
+            img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 0.07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+        </style>
+        <link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="wc-blocks-vendors-style-css" href="wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style4ae6.css?ver=7.6.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="wc-blocks-style-css" href="wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style4ae6.css?ver=7.6.2" type="text/css" media="all" />
+        <style id="global-styles-inline-css" type="text/css">
+            body {
+                --wp--preset--color--black: #000000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #ffffff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+                --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+                --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+                --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+                --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+                --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+                --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+                --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+                --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+            }
+            .has-black-color {
+                color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-color {
+                color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-color {
+                color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-color {
+                color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-color {
+                color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-color {
+                color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-color {
+                color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-color {
+                color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-color {
+                color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-color {
+                color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-color {
+                color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-color {
+                color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-black-background-color {
+                background-color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-background-color {
+                background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-background-color {
+                background-color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-background-color {
+                background-color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-background-color {
+                background-color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-background-color {
+                background-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-background-color {
+                background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-background-color {
+                background-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-black-border-color {
+                border-color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-border-color {
+                border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-border-color {
+                border-color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-border-color {
+                border-color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-border-color {
+                border-color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-border-color {
+                border-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-border-color {
+                border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-border-color {
+                border-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+            }
+            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+            }
+            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+            }
+            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+            }
+            .has-cool-to-warm-spectrum-gradient-background {
+                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+            }
+            .has-blush-light-purple-gradient-background {
+                background: var(--wp--preset--gradient--blush-light-purple) !important;
+            }
+            .has-blush-bordeaux-gradient-background {
+                background: var(--wp--preset--gradient--blush-bordeaux) !important;
+            }
+            .has-luminous-dusk-gradient-background {
+                background: var(--wp--preset--gradient--luminous-dusk) !important;
+            }
+            .has-pale-ocean-gradient-background {
+                background: var(--wp--preset--gradient--pale-ocean) !important;
+            }
+            .has-electric-grass-gradient-background {
+                background: var(--wp--preset--gradient--electric-grass) !important;
+            }
+            .has-midnight-gradient-background {
+                background: var(--wp--preset--gradient--midnight) !important;
+            }
+            .has-small-font-size {
+                font-size: var(--wp--preset--font-size--small) !important;
+            }
+            .has-medium-font-size {
+                font-size: var(--wp--preset--font-size--medium) !important;
+            }
+            .has-large-font-size {
+                font-size: var(--wp--preset--font-size--large) !important;
+            }
+            .has-x-large-font-size {
+                font-size: var(--wp--preset--font-size--x-large) !important;
+            }
+        </style>
+        <link rel="stylesheet" id="basicLightbox-css" href="wp-content/plugins/angio-toolkit/options/toolkit/vendors/basicLightbox/basicLightbox.min5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="swiper-css" href="wp-content/plugins/angio-toolkit/options/toolkit/vendors/swiper/swiper.min5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="angio-toolkit-css" href="wp-content/plugins/angio-toolkit/options/toolkit/css/frontend-toolkit5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="contact-form-7-css" href="wp-content/plugins/contact-form-7/includes/css/styles40df.css?ver=5.6" type="text/css" media="all" />
+        <link rel="stylesheet" id="woocommerce-layout-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-layoutb6a4.css?ver=6.6.1" type="text/css" media="all" />
+        <link rel="stylesheet" id="woocommerce-smallscreen-css" href="wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreenb6a4.css?ver=6.6.1" type="text/css" media="only screen and (max-width: 768px)" />
+        <link rel="stylesheet" id="woocommerce-general-css" href="wp-content/plugins/woocommerce/assets/css/woocommerceb6a4.css?ver=6.6.1" type="text/css" media="all" />
+        <style id="woocommerce-inline-inline-css" type="text/css">
+            .woocommerce form .form-row .required {
+                visibility: visible;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            id="angio-fonts-css"
+            href="http://fonts.googleapis.com/css?family=Inconsolata%3Awght%40400%3B700%7CChivo%3Aital%2Cwght%400%2C300%2C400%3B0%2C700%3B1%2C400%3B1%2C700&amp;display=swap&amp;ver=1.0.0"
+            type="text/css"
+            media="all"
+        />
+        <link rel="stylesheet" id="icomoon-font-css" href="wp-content/themes/angio/css/icomoon5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="angio-grid-css" href="wp-content/themes/angio/css/grid5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="angio-style-css" href="wp-content/themes/angio/style5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="woocommerce-custom-style-css" href="wp-content/plugins/angio-toolkit/options/woocommerce/css/wc-custom-style5b21.css?ver=6.0.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-icons-css" href="wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min7816.css?ver=5.15.0" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-frontend-legacy-css" href="wp-content/plugins/elementor/assets/css/frontend-legacy.min1ed5.css?ver=3.6.6" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-frontend-css" href="wp-content/plugins/elementor/assets/css/frontend.min1ed5.css?ver=3.6.6" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-post-5-css" href="wp-content/uploads/elementor/css/post-5ce5d.css?ver=1656621603" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-post-72-css" href="wp-content/uploads/elementor/css/post-72ce5d.css?ver=1656621603" type="text/css" media="all" />
+        <style id="rascalspanel-custom-inline-css" type="text/css">
+            body {
+                color: #cccccc;
+            }
+            .widget_rss li cite {
+                color: #cccccc;
+            }
+            .brand-color {
+                color: #33f7dd;
+            }
+            .site .color {
+                color: #33f7dd;
+            }
+            .is-style-outline .wp-block-button__link {
+                color: #33f7dd;
+                border-color: #33f7dd;
+            }
+            .loader__bytes {
+                color: #33f7dd;
+            }
+            .header__menu ul ul a:hover {
+                color: #33f7dd;
+            }
+            .meta__date {
+                color: #33f7dd;
+            }
+            .comments__number {
+                color: #33f7dd;
+            }
+            #reply-title small a {
+                color: #33f7dd;
+            }
+            .widget a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_categories a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_archive a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_recent_entries a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_meta a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_nav_menu a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_pages a:hover {
+                color: #33f7dd;
+            }
+            .widget.widget_links {
+                color: #33f7dd;
+            }
+            .widget table#wp-calendar #next a:hover {
+                color: #33f7dd;
+            }
+            .widget table#wp-calendar #prev a:hover {
+                color: #33f7dd;
+            }
+            .mod__date {
+                color: #33f7dd;
+            }
+            .mod__readmore a {
+                color: #33f7dd;
+            }
+            .mod-news-3 .mod__date {
+                color: #33f7dd;
+            }
+            a .g:after {
+                color: #33f7dd;
+            }
+            .b-trigger .g:after {
+                color: #33f7dd;
+            }
+            body .mfp-arrow:hover {
+                color: #33f7dd;
+            }
+            .mfp-close:hover:after {
+                color: #33f7dd;
+            }
+            .menu-main__toggle:hover {
+                color: #33f7dd;
+            }
+            .wave-album__text {
+                color: #33f7dd;
+            }
+            .wave-album__buttons a:hover span {
+                color: #33f7dd;
+            }
+            .glitch-slider__desc {
+                color: #33f7dd;
+            }
+            .album-button:hover {
+                color: #33f7dd;
+            }
+            .event-h__date {
+                color: #33f7dd;
+            }
+            .mod-event-1 .mod__event-date {
+                color: #33f7dd;
+            }
+            .mod-event-2 .mod__event-date {
+                color: #33f7dd;
+            }
+            .brand-bg-color {
+                background-color: #33f7dd;
+            }
+            .mod__inner.sticky .mod__title:before {
+                background-color: #33f7dd;
+            }
+            .wp-block-tag-cloud a {
+                background-color: #33f7dd;
+            }
+            .wp-block-button__link {
+                background-color: #33f7dd;
+            }
+            .wp-block-file .wp-block-file__button {
+                background-color: #33f7dd;
+            }
+            .paging-navigation .page-numbers.current {
+                background-color: #33f7dd;
+            }
+            .paging-navigation a:hover {
+                background-color: #33f7dd;
+            }
+            .attachment-post-link a:hover {
+                background-color: #33f7dd;
+            }
+            .loader__progress:after {
+                background-color: #33f7dd;
+            }
+            .widget button {
+                background-color: #33f7dd;
+            }
+            .widget .button {
+                background-color: #33f7dd;
+            }
+            .widget input[type="button"] {
+                background-color: #33f7dd;
+            }
+            .widget input[type="reset"] {
+                background-color: #33f7dd;
+            }
+            .widget input[type="submit"] {
+                background-color: #33f7dd;
+            }
+            .widget_tag_cloud a {
+                background-color: #33f7dd;
+            }
+            .widget.widget_tag_cloud a:hover {
+                background-color: #33f7dd;
+            }
+            .message {
+                background-color: #33f7dd;
+            }
+            input[type="submit"]:hover {
+                background-color: #33f7dd;
+                border-color: #33f7dd;
+            }
+            button:hover {
+                background-color: #33f7dd;
+                border-color: #33f7dd;
+            }
+            .btn:hover {
+                background-color: #33f7dd;
+                border-color: #33f7dd;
+            }
+            .b-style-1:hover:before {
+                background-color: #33f7dd;
+            }
+            .meta-tags a:hover:before {
+                background-color: #33f7dd;
+            }
+            .comment .reply a:hover:before {
+                background-color: #33f7dd;
+            }
+            .audio-ctrl__position {
+                background-color: #33f7dd;
+            }
+            blockquote {
+                border-color: #33f7dd;
+            }
+            .wp-block-quote {
+                border-color: #33f7dd;
+            }
+            input[type="submit"] {
+                border-color: #33f7dd;
+            }
+            button {
+                border-color: #33f7dd;
+            }
+            .btn {
+                border-color: #33f7dd;
+            }
+            .b-style-4 .b-style-4__a:before {
+                border-color: #33f7dd;
+            }
+            .album-button {
+                border-color: #33f7dd;
+            }
+            .album-button:after {
+                border-color: #33f7dd;
+            }
+            .album-button:before {
+                border-color: #33f7dd;
+            }
+            .header__logo a img {
+                width: 70px;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            id="google-fonts-1-css"
+            href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.0.2"
+            type="text/css"
+            media="all"
+        />
+        <script type="text/javascript" src="wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0" id="jquery-core-js"></script>
+        <script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2" id="jquery-migrate-js"></script>
+        <script type="text/javascript" id="jquery-js-after">
+            jQuery(document).ready(function () {
+                document.addEventListener(
+                    "contextmenu",
+                    function (e) {
+                        if (e.target.className.includes("audio-player__track")) {
+                            e.preventDefault();
+                        }
+                    },
+                    false
+                );
+            });
+        </script>
+        <link rel="https://api.w.org/" href="wp-json/index.html" />
+        <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/72.json" />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+        <meta name="generator" content="WordPress 6.0.2" />
+        <meta name="generator" content="WooCommerce 6.6.1" />
+        <link rel="canonical" href="index.html" />
+        <link rel="shortlink" href="../indexae74.html?p=72" />
+        <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed23bc.json?url=https%3A%2F%2Frascalsthemes.com%2Fdemo%2Fangio%2Fdemo1%2Fcontact%2F" />
+        <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed313e?url=https%3A%2F%2Frascalsthemes.com%2Fdemo%2Fangio%2Fdemo1%2Fcontact%2F&amp;format=xml" />
+        <noscript>
+            <style>
+                .woocommerce-product-gallery {
+                    opacity: 1 !important;
+                }
+            </style>
+        </noscript>
+        <style type="text/css">
+            .recentcomments a {
+                display: inline !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        </style>
+    </head>
+
+    <body
+        class="page-template-default page page-id-72 wp-embed-responsive theme-angio woocommerce-no-js page-title-disabled is-fullscreen AXloader is-page-transitions is-scroll-mask is-smoothscroll is-scroll-animations is-cursor-effects is-hidden-header elementor-default elementor-kit-5 elementor-page elementor-page-72"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-dark-grayscale">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 0,49803921568627" />
+                        <feFuncG type="table" tableValues="0 0,49803921568627" />
+                        <feFuncB type="table" tableValues="0 0,49803921568627" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-grayscale">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 1" />
+                        <feFuncG type="table" tableValues="0 1" />
+                        <feFuncB type="table" tableValues="0 1" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-purple-yellow">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0,54901960784314 0,98823529411765" />
+                        <feFuncG type="table" tableValues="0 1" />
+                        <feFuncB type="table" tableValues="0,71764705882353 0,25490196078431" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-blue-red">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 1" />
+                        <feFuncG type="table" tableValues="0 0,27843137254902" />
+                        <feFuncB type="table" tableValues="0,5921568627451 0,27843137254902" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-midnight">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 0" />
+                        <feFuncG type="table" tableValues="0 0,64705882352941" />
+                        <feFuncB type="table" tableValues="0 1" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-magenta-yellow">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0,78039215686275 1" />
+                        <feFuncG type="table" tableValues="0 0,94901960784314" />
+                        <feFuncB type="table" tableValues="0,35294117647059 0,47058823529412" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-purple-green">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0,65098039215686 0,40392156862745" />
+                        <feFuncG type="table" tableValues="0 1" />
+                        <feFuncB type="table" tableValues="0,44705882352941 0,4" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-blue-orange">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0,098039215686275 1" />
+                        <feFuncG type="table" tableValues="0 0,66274509803922" />
+                        <feFuncB type="table" tableValues="0,84705882352941 0,41960784313725" />
+                        <feFuncA type="table" tableValues="1 1" />
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in" />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="noisy"></div>
+
+        <div class="loader theme-loader">
+            <div class="loader__content">
+                <div class="loader__inner">
+                    <div class="loader__image">
+                        <img src="wp-content/themes/angio/images/logo.svg" alt="Preloader Image" />
+                        <div class="loader__progress"></div>
+                        <div class="loader__bytes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-trans glitch-disappear"></div>
+
+        <div id="cursor">
+            <div class="cursor__body"></div>
+            <div class="cursor__body-inner"></div>
+            <div class="cursor__body-text"></div>
+        </div>
+
+        <header id="header" class="header-hybrid">
+            <div class="header__container container--full">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="../index.html"><img src="wp-content/themes/angio/images/logo.svg" alt="Logo Image" /></a>
+                    </div>
+                </div>
+
+        
+
+            </div>
+        </header>
+
+        <div id="app">
+            <div id="ajax-content">
+                <div class="rp-page-audio" data-audio=""></div>
+                <div class="content--builder">
+                    <div class="fx-smooth-move fs">
+                        <div class="fs__image fx-smooth-move-bg fx-smooth-move-layer" style="background-image: url(wp-content/uploads/2020/09/black.jpg);"></div>
+
+                        <div class="fade-layer" style="opacity: 0.7;"></div>
+
+                        <div id="fs-scroll" class="fs-scroll--v">
+                            <div id="fs-scroll__content">
+                                <div class="container--builder" style="padding-top: 0px; padding-bottom: 0px;">
+                                    <div data-elementor-type="wp-page" data-elementor-id="72" class="elementor elementor-72">
+                                        <div class="elementor-inner">
+                                            <div class="elementor-section-wrap">
+                                                <section
+                                                    class="elementor-section elementor-top-section elementor-element elementor-element-ed8366c elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default"
+                                                    data-id="ed8366c"
+                                                    data-element_type="section"
+                                                >
+                                                    <div class="elementor-background-overlay"></div>
+                                                    <div class="elementor-container elementor-column-gap-no">
+                                                        <div class="elementor-row">
+                                                            
+
+
+
+                                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2d72aa9" data-id="2d72aa9" data-element_type="column" data-settings='{"background_background":"classic"}' >
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <section
+                                                                            class="elementor-section elementor-inner-section elementor-element elementor-element-7064dad elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                                            data-id="7064dad"
+                                                                            data-element_type="section"
+                                                                        >
+                                                                            <div class="elementor-container elementor-column-gap-no">
+                                                                                <div class="elementor-row">
+                                                                                    <div
+                                                                                        class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a0cf1b5"
+                                                                                        data-id="a0cf1b5"
+                                                                                        data-element_type="column"
+                                                                                    >
+                                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div
+                                                                                                    class="elementor-element elementor-element-e58cc20 elementor-widget elementor-widget-angio_post_title"
+                                                                                                    data-id="e58cc20"
+                                                                                                    data-element_type="widget"
+                                                                                                    data-widget_type="angio_post_title.default"
+                                                                                                >
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="post_title-elementor-widget"><h1 class="ptitle fx-text-word is-waypoint solid">Login</h1></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="elementor-element elementor-element-1d3e024d animated-fast elementor-invisible elementor-widget elementor-widget-shortcode"
+                                                                                                    data-id="1d3e024d"
+                                                                                                    data-element_type="widget"
+                                                                                                    data-settings='{"_animation":"slideInUp","_animation_delay":1500,"_animation_mobile":"none"}'
+                                                                                                    data-widget_type="shortcode.default"
+                                                                                                >
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-shortcode">
+                                                                                                            <div role="form" class="wpcf7" id="wpcf7-f264-p72-o1" lang="en-US" dir="ltr">
+                                                                                                                <div class="screen-reader-response">
+                                                                                                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                                                                                    <ul></ul>
+                                                                                                                </div>
+                                                                                                                <form action="" method="post" class="wpcf7-form init">
+                                                                                    
+                                                                                                                    <div class="mailbox">
+                                                                                                                        
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="email" name="your-email" value="" placeholder="Email ...*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                                                                                                                <input type="password" name="your-name" value="" placeholder="Password ...*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+                                                                                                                        <div class="mailbox__submit magneto">
+                                                                                                                            <input type="submit" value="Submit" />
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                                                                                </form>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8a347e9" data-id="8a347e9" data-element_type="column">
+                                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap">
+                                                                        <section
+                                                                            class="elementor-section elementor-inner-section elementor-element elementor-element-7064dad elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                                            data-id="7064dad"
+                                                                            data-element_type="section"
+                                                                        >
+                                                                            <div class="elementor-container elementor-column-gap-no">
+                                                                             <!--    <div class="elementor-row">
+                                                                                    <div
+                                                                                        class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a0cf1b5"
+                                                                                        data-id="a0cf1b5"
+                                                                                        data-element_type="column"
+                                                                                    >
+                                                                                        <div class="elementor-column-wrap elementor-element-populated">
+                                                                                            <div class="elementor-widget-wrap">
+                                                                                                <div
+                                                                                                    class="elementor-element elementor-element-e58cc20 elementor-widget elementor-widget-angio_post_title"
+                                                                                                    data-id="e58cc20"
+                                                                                                    data-element_type="widget"
+                                                                                                    data-widget_type="angio_post_title.default"
+                                                                                                >
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="post_title-elementor-widget"><h1 class="ptitle fx-text-word is-waypoint solid">Signup</h1></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="elementor-element elementor-element-1d3e024d animated-fast elementor-invisible elementor-widget elementor-widget-shortcode"
+                                                                                                    data-id="1d3e024d"
+                                                                                                    data-element_type="widget"
+                                                                                                    data-settings='{"_animation":"slideInUp","_animation_delay":1500,"_animation_mobile":"none"}'
+                                                                                                    data-widget_type="shortcode.default"
+                                                                                                >
+                                                                                                    <div class="elementor-widget-container">
+                                                                                                        <div class="elementor-shortcode">
+                                                                                                            <div role="form" class="wpcf7" id="wpcf7-f264-p72-o1" lang="en-US" dir="ltr">
+                                                                                                                <div class="screen-reader-response">
+                                                                                                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                                                                                    <ul></ul>
+                                                                                                                </div>
+                                                                                                                <form action="" method="post" class="wpcf7-form init">
+                                                                                                                    
+                                                                                                                    <div class="mailbox">
+                                                                                                                        
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                                                                                                                <input type="text" name="your-name" value="" placeholder="First Name"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                                                                                                                <input type="text" name="your-name" value=""  placeholder="Last Name"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="email" name="your-email" value=""  placeholder="Email Address*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="file" name="your-email" value="" style=" height: 54px;" placeholder="Email Address*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="password" name="your-email" value=""  placeholder="Password ...*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="password" name="your-email" value=""  placeholder="Re Password ...*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <input type="text" name="your-email" value=""  placeholder="OTP ...*"/>
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__name">
+                                                                                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                                                                                <div style=" height: 54px;">
+                                                                                                                                    <input type="submit" style="height: 80%; padding-top: 1%;padding-bottom: 1%; margin-top: 2%; margin-left: 5%;"  value="Send OTP" />    
+                                                                                                                                </div>
+                                                                                                                                
+                                                                                                                            </span>
+                                                                                                                        </div>
+
+                                                                                                                        <div class="mailbox__submit magneto" >
+                                                                                                                            <input type="submit" value="Submit" />
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                                                                                </form>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div> -->
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #fs-scroll__content -->
+                        </div>
+                        <!-- #fs-scroll -->
+                    </div>
+                    <!-- .fx -->
+                </div>
+                <!-- .content -->
+            </div>
+            <!-- #ajax content -->
+
+            <!-- Footer container -->
+            <footer id="footer" class="container container--full">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-inner">
+                            <div class="socials b-trigger fx-cursor" data-cursor-class="hover">
+                                <ul class="socials__list">
+                                    <li class="trans-05 delay-02">
+                                        <div class="magneto">
+                                            <a href="#" class="socials__link social--Tw b-style-1" target="_blank"><span class="social__name social__name-Tw">Tw</span></a>
+                                        </div>
+                                    </li>
+                                    <li class="trans-05 delay-01">
+                                        <div class="magneto">
+                                            <a href="#" class="socials__link social--Fb b-style-1" target="_blank"><span class="social__name social__name-Fb">Fb</span></a>
+                                        </div>
+                                    </li>
+                                    <li class="trans-05 delay-00">
+                                        <div class="magneto">
+                                            <a href="#" class="socials__link social--In b-style-1" target="_blank"><span class="social__name social__name-In">In</span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="socials__icon magneto"><span class="icon icon-share"></span></span>
+
+                                <div class="socials__text b-style-3">
+                                    <span class="g" data-g="Follow">Follow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__center">
+                        <div class="footer__note">&copy; Copyright 2023 <a class="b-style-1" href="#" target="_blank">Angio</a></div>
+                        <!-- .footer-note -->
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-inner">
+                            <a href="#" class="arrow-button scroll-top b-trigger">
+                                <div class="b-style-3 scroll-top__text">
+                                    <span class="g" data-g="Scroll Up">Scroll Up</span>
+                                </div>
+                                <div class="scroll-top__icon magneto">
+                                    <span class="icon icon-chevron-up"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- .footer -->
+        </div>
+        <!-- .site -->
+
+        <div id="fx-load-holder"></div>
+        <div class="ax--wp-footer">
+            <script type="text/javascript">
+                (function () {
+                    var c = document.body.className;
+                    c = c.replace(/woocommerce-no-js/, "woocommerce-js");
+                    document.body.className = c;
+                })();
+            </script>
+            <link rel="stylesheet" id="e-animations-css" href="wp-content/plugins/elementor/assets/lib/animations/animations.min1ed5.css?ver=3.6.6" type="text/css" media="all" />
+            <script type="text/javascript" src="wp-content/plugins/angio-toolkit/options/toolkit/vendors/basicLightbox/basicLightbox.min5b21.js?ver=6.0.2" id="basicLightbox-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/lib/swiper/swiper.min48f5.js?ver=5.3.6" id="swiper-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/angio-toolkit/options/toolkit/vendors/threejs/three.min5b21.js?ver=6.0.2" id="threejs-js"></script>
+            <script type="text/javascript" id="angio-toolkit-js-extra">
+                /* <![CDATA[ */
+                var toolkitOptions = { path: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-content\/plugins\/angio-toolkit", siteUrl: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1" };
+                var ajax_action = { ajaxurl: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-admin\/admin-ajax.php", ajax_nonce: "470e913afb" };
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="wp-content/plugins/angio-toolkit/options/toolkit/js/frontend-toolkit5b21.js?ver=6.0.2" id="angio-toolkit-js"></script>
+            <script type="text/javascript" src="wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+            <script type="text/javascript" src="wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
+            <script type="text/javascript" id="contact-form-7-js-extra">
+                /* <![CDATA[ */
+                var wpcf7 = { api: { root: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-json\/", namespace: "contact-form-7\/v1" } };
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/index40df.js?ver=5.6" id="contact-form-7-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min633e.js?ver=2.7.0-wc.6.6.1" id="jquery-blockui-js"></script>
+   
+            <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minb6a4.js?ver=6.6.1" id="wc-add-to-cart-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min88a5.js?ver=2.1.4-wc.6.6.1" id="js-cookie-js"></script>
+
+            <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minb6a4.js?ver=6.6.1" id="woocommerce-js"></script>
+    
+            <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minb6a4.js?ver=6.6.1" id="wc-cart-fragments-js"></script>
+            <script type="text/javascript" src="wp-content/themes/angio/js/gsap.min5b21.js?ver=6.0.2" id="gsap-js"></script>
+            <script type="text/javascript" src="wp-content/themes/angio/js/scrollmagic.min5b21.js?ver=6.0.2" id="gsap-scrollmagic-js"></script>
+            <script type="text/javascript" src="wp-content/themes/angio/js/smooth-scrollbar.min5b21.js?ver=6.0.2" id="smooth-scrollbar-js"></script>
+            <script type="text/javascript" src="wp-content/themes/angio/js/axloader5b21.js?ver=6.0.2" id="axloader-js"></script>
+            <script type="text/javascript" src="wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4" id="imagesloaded-js"></script>
+            <script type="text/javascript" id="angio-theme-scripts-js-extra">
+                /* <![CDATA[ */
+                var themeVars = {
+                    baseUrl: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/",
+                    path: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-content\/themes\/angio",
+                    dir: "\/demo\/angio\/demo1",
+                    ajaxed: "1",
+                    permalinks: "1",
+                    blacklistSelectors:
+                        ".ajax-off,.woocommerce-message .restore-item,.product-remove .remove,.remove_from_cart_button,.add_to_cart_button,.single_add_to_cart_button,.ajax_add_to_cart,.wc-tabs li a,ul.tabs li a,.woocommerce-review-link,.woocommerce-Button.download,.woocommerce-MyAccount-downloads-file",
+                    reloadScripts:
+                        "admin-bar.min.js,waypoints.min.js,woocommerce\/assets\/js\/frontend\/checkout.min.js,woocommerce\/assets\/js\/frontend\/country-select.min.js,woocommerce\/assets\/js\/frontend\/single-product.min.js,woocommerce\/assets\/js\/frontend\/woocommerce.min.js,contact-form-7\/includes\/js\/scripts.js,elementor\/assets\/lib\/swiper\/swiper.min.js,elementor\/assets\/js\/frontend.min.js",
+                    reloadContainers: "#wpadminbar",
+                    blacklistLinks: "",
+                };
+                var ajax_action = { ajaxurl: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-admin\/admin-ajax.php", ajax_nonce: "470e913afb" };
+                /* ]]> */
+            </script>
+            <script type="text/javascript" src="wp-content/themes/angio/js/theme5b21.js?ver=6.0.2" id="angio-theme-scripts-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/webpack.runtime.min1ed5.js?ver=3.6.6" id="elementor-webpack-runtime-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend-modules.min1ed5.js?ver=3.6.6" id="elementor-frontend-modules-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+            <script type="text/javascript" src="wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1" id="jquery-ui-core-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/lib/share-link/share-link.min1ed5.js?ver=3.6.6" id="share-link-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/lib/dialog/dialog.mind227.js?ver=4.9.0" id="elementor-dialog-js"></script>
+            <script type="text/javascript" id="elementor-frontend-js-before">
+                var elementorFrontendConfig = {
+                    environmentMode: { edit: false, wpPreview: false, isScriptDebug: false },
+                    i18n: {
+                        shareOnFacebook: "Share on Facebook",
+                        shareOnTwitter: "Share on Twitter",
+                        pinIt: "Pin it",
+                        download: "Download",
+                        downloadImage: "Download image",
+                        fullscreen: "Fullscreen",
+                        zoom: "Zoom",
+                        share: "Share",
+                        playVideo: "Play Video",
+                        previous: "Previous",
+                        next: "Next",
+                        close: "Close",
+                    },
+                    is_rtl: false,
+                    breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+                    responsive: {
+                        breakpoints: {
+                            mobile: { label: "Mobile", value: 767, default_value: 767, direction: "max", is_enabled: true },
+                            mobile_extra: { label: "Mobile Extra", value: 880, default_value: 880, direction: "max", is_enabled: false },
+                            tablet: { label: "Tablet", value: 1024, default_value: 1024, direction: "max", is_enabled: true },
+                            tablet_extra: { label: "Tablet Extra", value: 1200, default_value: 1200, direction: "max", is_enabled: false },
+                            laptop: { label: "Laptop", value: 1366, default_value: 1366, direction: "max", is_enabled: false },
+                            widescreen: { label: "Widescreen", value: 2400, default_value: 2400, direction: "min", is_enabled: false },
+                        },
+                    },
+                    version: "3.6.6",
+                    is_static: false,
+                    experimentalFeatures: { e_import_export: true, e_hidden_wordpress_widgets: true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true },
+                    urls: { assets: "https:\/\/rascalsthemes.com\/demo\/angio\/demo1\/wp-content\/plugins\/elementor\/assets\/" },
+                    settings: { page: [], editorPreferences: [] },
+                    kit: {
+                        active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+                        global_image_lightbox: "yes",
+                        lightbox_enable_counter: "yes",
+                        lightbox_enable_fullscreen: "yes",
+                        lightbox_enable_zoom: "yes",
+                        lightbox_enable_share: "yes",
+                        lightbox_title_src: "title",
+                        lightbox_description_src: "description",
+                    },
+                    post: { id: 72, title: "Contact%20%E2%80%93%20Angio%20%E2%80%93%20Creative%20Music%20WordPress%20Theme", excerpt: "", featuredImage: false },
+                };
+            </script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend.min1ed5.js?ver=3.6.6" id="elementor-frontend-js"></script>
+            <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/preloaded-modules.min1ed5.js?ver=3.6.6" id="preloaded-modules-js"></script>
+        </div>
+    </body>
+
+
+</html>

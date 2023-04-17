@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from phantom-themes.com/connect/theme/templates/admin2/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Oct 2021 10:38:56 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Responsive Admin Dashboard Template">
+        <meta name="keywords" content="admin,dashboard">
+        <meta name="author" content="stacks">
+        <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- Title -->
+        <title>{{ page_name }} &#8211; Angio</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename= 'img/icons/favicon.ico')}}" />
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/plugins/font-awesome/css/all.min.css')}}" rel="stylesheet">
+
+      
+        <!-- Theme Styles -->
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/css/connect.min.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/css/admin2.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/css/dark_theme.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename= 'shelterhome/assets/css/custom.css')}}" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="auth-page sign-in">
+        
+        <div class='loader'>
+            <div class='spinner-grow text-primary' role='status'>
+                <span class='sr-only'>Loading...</span>
+            </div>
+        </div>
+
+        <div class="connect-container align-content-stretch d-flex flex-wrap">
+            <div class="page-container">
+                
+                <div class="page-content">
+                   
+                    <div class="main-wrapper container">
+
+                       
+                        <div class="row">
+                            <div class="col-xl">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h1>Sign-up</h1>
+                                        <br>
+                                        <p style="color: red;">{{emsg}}</p>
+                                        <form method="post" action="/Shelter-Home/signup" enctype="multipart/form-data">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputName">Owner-Name</label>
+                                                    <input type="text" class="form-control" id="inputName" name="name" placeholder="Owner-Name..." required>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail" name="mailid" placeholder="Email..." required>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputPhone">Phone Number</label>
+                                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="Phone Number..." onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="10" minlength="10" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-5">
+                                                    <label for="inputAddress">Proprety Name</label>
+                                                    <input type="text" class="form-control" id="inputsname" name="Sh_name" placeholder="abc..." required>
+                                                </div>
+                                                <div class="form-group col-md-7">
+                                                    <label for="inputState">GST number</label>
+                                                    <input type="text" class="form-control" id="inputGST" name="gtsin" placeholder="GST-IN..." maxlength="15" minlength="15" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword" name="pass" placeholder="Password..." required>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputRePassword">Re-Password</label>
+                                                    <input type="password" class="form-control" id="inputRePassword" name="repass" placeholder="Re-Password..." required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputAddress">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress" name="add" placeholder=" 1234 Main St..." required>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-2">
+                                                    <label for="inputZip">Pincode</label>
+                                                    <input type="text" class="form-control" placeholder="Pincode..." name="pincode" id="inputZip" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="6" minlength="6" required>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputState">State</label>
+                                                    <input type="text" class="form-control" id="inputState" name="state" placeholder="State..." readonly required>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label for="inputCity">City</label>
+                                                    <input type="text" class="form-control" name="city" placeholder="City..." id="inputCity" readonly required>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label for="inputArea">Area</label>
+                                                    <input type="text" class="form-control" name="area" placeholder="Area..." id="inputArea" readonly required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-5">
+                                                    <label for="inputPhoto">Photo</label>
+                                                    <input type="file" class="form-control" id="inputPhoto" name="photo" required>
+                                                </div>
+                                                <div class="form-group col-md-7">
+                                                    <label for="inputMap">Map Link</label>
+                                                    <input type="text" class="form-control" id="inputMap" name="maplink" placeholder=" https://goo.gl/maps/..." required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputLatitude">Latitude</label>
+                                                    <input type="text" class="form-control" placeholder="Latitude..." name="lati" id="inputLatitude" required>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputLongitude">Longitude</label>
+                                                    <input type="text" class="form-control" id="inputLongitude" name="long" placeholder="Longitude..." required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDatails">Details</label>
+                                                <textarea class="form-control" id="inputDatails" name="details" placeholder="We provide this all things..." required></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gridCheck" required>
+                                                    <label class="custom-control-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    
+    $('#inputZip').on('input',function(e){
+        var pincode = document.getElementById('inputZip').value;
+        if (pincode.length == 6)
+        {
+            $.post('/Shelter-Home/check-pincode',   // url
+                { pincode: pincode }, // data to be submit
+                    function(data, status, jqXHR) {// success callback
+                    $('#inputArea').val(data['area']);
+                    $('#inputCity').val(data['city'])
+                    $('#inputState').val(data['state']);
+                })
+        }
+    });
+
+</script>
+
+      
+        
+        <!-- Javascripts -->
+        <script src="{{ url_for('static', filename= 'shelterhome/assets/plugins/jquery/jquery-3.4.1.min.js')}}"></script>
+        <script src="{{ url_for('static', filename= 'shelterhome/assets/plugins/bootstrap/popper.min.js')}}"></script>
+        <script src="{{ url_for('static', filename= 'shelterhome/assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{ url_for('static', filename= 'shelterhome/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+        <script src="{{ url_for('static', filename= 'shelterhome/assets/js/connect.min.js')}}"></script>
+    </body>
+
+<!-- Mirrored from phantom-themes.com/connect/theme/templates/admin2/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Oct 2021 10:38:56 GMT -->
+</html>

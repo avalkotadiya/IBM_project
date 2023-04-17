@@ -1,0 +1,114 @@
+{% extends "shelterhome/head_foot/head_foot.html" %}
+
+{% block body %}
+
+
+
+
+
+
+                <div class="page-content">
+                    <div class="page-info container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="main-wrapper container">
+                        
+                        <div class="row">
+                            <div class="col-xl">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ADD New Room</h5>
+                                        <p>{{emsg}}</p>
+                                        <form method="post" action="/Shelter-Home/Rooms/Insert" enctype="multipart/form-data">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputRoomType">Room Type</label>
+                                                    <input type="text" class="form-control" id="inputRoomType" name="room_type" placeholder="deluxe, super deluxe ..." required>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrice">Price</label>
+                                                    <input type="text" class="form-control" id="inputPrice" name="price" placeholder="2000 (In Rupee) ..." required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSDate">Start Date</label>
+                                                    <input type="date" class="form-control" id="inputSDate" name="s_date" placeholder="01/01/2023 ..." required>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEDate">End Date</label>
+                                                    <input type="date" class="form-control" id="inputEDate" name="e_date" placeholder="28/02/2023 ..." required>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputDetails">Details</label>
+                                                    <textarea class="form-control" id="inputDetails" name="details" placeholder="Details ..." required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputTotPhoto">Total Photo</label>
+                                                    <select id="inputTotPhoto" class="form-control custom-select" name="tot_photos" required>
+                                                        <option value="0" selected>Choose...</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputMainPhoto">Main Photo</label>
+                                                    <input type="file" class="form-control" id="inputMainPhoto" name="photo_main" required>
+                                                </div>
+                                            </div>
+
+                                            <div id="mid_p"></div>
+                                            
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $('#inputTotPhoto').on('change', function (e) {
+        var valueSelected = parseInt(this.value);
+        $("#mid_p").empty();
+        for (let i = 1; i < valueSelected; i++)
+        {
+            $("#mid_p").append('<div class="form-row"><div class="form-group col-md-6"><input type="file" class="form-control" name="photo_'+i.toString()+'" required></div></div>');
+        }
+    });
+});
+</script>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gridCheck" required>
+                                                    <label class="custom-control-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Insert</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+{% endblock %}

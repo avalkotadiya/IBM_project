@@ -1,0 +1,62 @@
+[
+    {
+        "_id": {
+            "$oid": "642abc726d0bc12e57b0aa69"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "cr",
+        "date": "",
+        "item": "Add to Wallet",
+        "amount": 120000
+    },
+    {
+        "_id": {
+            "$oid": "642dafd27a329f1c05f6819e"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "dr",
+        "date": "05/04/2023 22:58:50",
+        "item": "Booked deluxe room of Cambay Grand from:2023-04-05 to:2023-04-07",
+        "amount": "4000"
+    },
+    {
+        "_id": {
+            "$oid": "642db23a9f90b4cade07dae2"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "dr",
+        "date": "05/04/2023 23:09:06",
+        "item": "Booked deluxe room of Cambay Grand from:2023-04-08 to:2023-04-09",
+        "amount": "2000"
+    },
+    {
+        "_id": {
+            "$oid": "642db2519f90b4cade07db42"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "dr",
+        "date": "05/04/2023 23:09:29",
+        "item": "Booked deluxe room of Cambay Grand from:2023-04-10 to:2023-04-16",
+        "amount": "12000"
+    },
+    {
+        "_id": {
+            "$oid": "642db2e99f90b4cade07dc8c"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "dr",
+        "date": "05/04/2023 23:12:01",
+        "item": "Booked deluxe room of Cambay Grand from:2023-04-17 to:2023-04-18",
+        "amount": "2000"
+    },
+    {
+        "_id": {
+            "$oid": "642ea3031be74ede30300801"
+        },
+        "user_id": "63f7051bcf42dfb589b6bd9e",
+        "type": "dr",
+        "date": "06/04/2023 16:16:27",
+        "item": "Booked deluxe room of Cambay Grand from:2023-04-19 to:2023-04-20",
+        "amount": "2000"
+    }
+]

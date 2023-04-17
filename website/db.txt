@@ -1,0 +1,13 @@
+mongodb://localhost:27017/
+GIWW
+admin_master
+user_master
+aadhar_data_master
+homes_master
+booking_master
+pincodes
+homes_data
+room_data
+wallat_data
+payment_hist
+transaction_ids
